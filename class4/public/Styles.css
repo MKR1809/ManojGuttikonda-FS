@@ -29,7 +29,7 @@ header {
     align-items: center;
     background-color: rgb(23, 230, 241);
     justify-content: space-between;
-    padding:3px
+    padding:3px;
 }
 
 .column{
@@ -46,18 +46,27 @@ header {
 .card-grid {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  
 }
 
 .card {
-  flex: 1 1 300px; 
+  flex:1;
   margin: 10px;
   background-color: #9f5b5b;
   border-radius: 5px;
   overflow: hidden;
+  text-align: center;
 }
 
-.card-content {
-  padding: 10px;
+.sticky{
+  position: sticky;
+  border: 3px solid green;
+  height:100px;
+  width:100px;
+  text-align: center;
+  
 }
+
 
   
