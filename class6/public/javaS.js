@@ -5,12 +5,7 @@ function push(array, element){
 }
 
 fruits = ['apple', 'banana', 'mango'];
-
-let p  
-p = push(fruits, 'guava');
-
-//document.getElementById('1').innerHtml = pop;
-console.log(p);
+console.log(push(fruits, 'guava'));
 
 function pop(array){
     array.pop();
@@ -54,13 +49,37 @@ function toUpper(string){
 
 toUpper("manoj");
 
-function toUpper(string){
-    p = string.toUpperCase();
-    console.lop(p);
+function toLower(string){
+    p = string.toLowerCase();
+    console.log(p);
     
 }
 
-toUpper('upper');
+toLower('upper');
+
+function split(string){
+    if(string.includes(',') == true){
+        return console.log(string.split(','));
+    }
+    else if(string.includes(' ') == true){
+        return console.log(string.split(' '));
+    }
+    else if(string.includes('|') == true){
+        return console.log(string.split('|'));
+    }
+    else
+       console.log("There is nothing to split");
+}
+
+split("My Name Is Manoj");
+split('what,is,your,hobby');
+
+
+
+
+
+
+
 
 
 
